@@ -1,0 +1,20 @@
+{
+    "listeners": {
+        "*:80": {
+            "pass": "applications/fastapi"
+        }
+    },
+    "applications": {
+        "fastapi": {
+            "type": "python",
+	    "path": "/home/ec2-user/webapp/",
+	    "working_directory": "/home/ec2-user/webapp/webapp/",
+            "home": "/home/ec2-user/.cache/pypoetry/virtualenvs/webapp-qUTcKiIK-py3.7/",
+            "module": "webapp.main",
+            "callable": "app",
+	    "user": "ec2-user",
+	    "group": "ec2-user"
+        }
+    }
+}
+
