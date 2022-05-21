@@ -22,7 +22,7 @@ log.setLevel(logging.DEBUG)
 
 
 def write_notification():
-    log.info("Background Tast", extra={"client_id": "1123"})
+    log.info("Testing Background Task", extra={"client_id": "1123"})
     response = requests.get(f"http://ec2-11-111-111-11.us-east-2.compute.amazonaws.com:8081/?timestamp={time.time()}")
 
 
